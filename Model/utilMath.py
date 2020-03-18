@@ -6,7 +6,9 @@ utilMath holds misc. math functions and constants
 
 import numpy as np
 
-walkStdev = 0.779
+walkStdev = 0.779 # walkStdDev is the value of standard deviation at which
+                  # numpy's random.normal distribution will have roughly
+                  # equal 10th and 90th percentiles to those given. 
 
 # Walk takes the est. 10th percentile and 90th percentile values of a theoretical dataset
 # and creates a random value within a normally distributed set that has matching
@@ -21,5 +23,3 @@ def Walk(x10th,x90th,**kwargs):
         if x < kwargs["Min"]:
             return kwargs["Min"]
     return x
-
-# add above/below parameters
