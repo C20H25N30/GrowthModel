@@ -21,5 +21,3 @@ def Walk(x10th,x90th,**kwargs):
         if x < kwargs["Min"]:
             return kwargs["Min"]
     return x
-
-# add above/below parameters
