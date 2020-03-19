@@ -12,11 +12,14 @@ import numpy as np
 
 def RandGivenPercentile(xT, xN, **kwargs):
     # find est. mean and stdev of theoretical distribution
+    # Calculates mean and variance given xT and xN.
+    # I think this still may be overestimate of std.dev because the fxn expects that the two numbers given are randomly drawn from Dist. Whereas these two numbers are indeed from the dist, but reflect two relatively variable and non-random choices
     mu, sigma = np.average([xT, xN]), np.std([xT, xN])
     # check for recursion limit
-    if "recursionLimit" in kwargs.keys():  # then use recursion limit
+    # use recursion limit if specified, otherwise use 2.
+    if "recursionLimit" in kwargs.keys():
         recursionLimit = kwargs["recursionLimit"]
-    else:  # set default
+    else:  # set default recursionLimit
         recursionLimit = 2
     return randGivenPtilesGenAttempt(mu, sigma, 0, recursionLimit, **kwargs)
 
