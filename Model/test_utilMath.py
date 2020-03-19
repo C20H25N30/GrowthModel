@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
-
+"""
+Testing segments for utilMath.py
+"""
+"""
 import matplotlib.pyplot as plt
 import numpy as np
 import utilMath
@@ -52,6 +55,6 @@ plt.plot(bins, 1/(sigma * np.sqrt(2 * np.pi)) *
 
 plt.xlim(0,1)
 plt.show()
-
+"""
 #%%
 
