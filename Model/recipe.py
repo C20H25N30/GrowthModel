@@ -27,7 +27,7 @@ class Recipe:
 
     def __iter__(self):
         # whenever iter is called, the index is reset to 0
-        #self.idx = 0
+        # self.idx = 0
         return self
 
     def __next__(self):

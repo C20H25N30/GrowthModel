@@ -7,7 +7,7 @@ def loggerPrint(Object,**kwargs):
         print(kwargs["data"])
     else:
         return
-    
+
 class loggerStoreAndPrint:
     def __init__(self):
         self.count = 0
@@ -20,7 +20,7 @@ L2 = l.Logger(loggerStoreAndPrint)
 
 for i in range(5):
     L1.Log("",data=i)
-    
+
 for i in range(5):
     L2.Log("",data=i)
 """

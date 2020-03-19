@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
 # INTERFACE model for Logger
-## AND HAS METHOD ".Log(Object, **kwargs)"
-## it serves as a safely composable wrapper
+# AND HAS METHOD ".Log(Object, **kwargs)"
+# it serves as a safely composable wrapper
 
 
 class Logger:

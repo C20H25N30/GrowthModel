@@ -26,7 +26,7 @@ def RandGivenPercentile(xT, xN, **kwargs):
 
 def randGivenPtilesGenAttempt(mu, sigma, depth, limit, **kwargs):
     x = np.random.normal(mu, sigma)
-    # if there is a min/max, and the generated value "x" is outside these bounds
+    # if there is a min/max, and generated value "x" is outside these bounds
     # AND we have not exceeded our recursion depth limit, we will attempt to
     # generate again, if not, we will return the given max.
     # This affords n opportunities to redistribute within the bounds.
