@@ -12,3 +12,16 @@ for i in r.Iterator():
             print(i2)
     print(i)
 """
+#%%
+"""
+# Test for class RecipeBook from recipe.py
+from recipe import RecipeBook, Recipe
+r = RecipeBook()
+rA = Recipe(Ingredients = ["t1","t2","t3"])
+r.Set("Test",rA)
+
+for i in r.Get("Test"):
+    print(i)
+
+"""
+
